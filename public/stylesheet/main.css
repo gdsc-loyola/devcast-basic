@@ -5,11 +5,11 @@
 
 .about, .footer{
     font-family: 'Google Sans', sans-serif;
-    display: flexbox;
     box-sizing: border-box;
 }
 
 .about{
+    display: flexbox;
     padding: 64px 200px;
     border-bottom: 1px solid #EAEAEA;
     color: #333333;
@@ -39,11 +39,45 @@
 .footer{
     width: 70%;
     border-top: 1px solid #EAEAEA;
-    padding: 20px 0;
     margin: 216px auto 100px;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #828282;
 }
 
+@media screen and (max-width: 1070px){
+    .footer{
+        display: block;
+    }
+
+    .DSC-logo{
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+    }
+
+    .footer p{
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .about{
+        padding: 64px 40px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .footer{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .DSC-logo{
+        width: 90%;
+    }
+}
