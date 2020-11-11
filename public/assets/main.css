@@ -28,14 +28,33 @@ html {
 
 .ep-boxes {
 	flex-basis: 40%;
-	margin-top: 15px;
-	margin-left: 15px;
-	padding: 2px;
+	margin: 15px 0px 0px 15px;
 	background: #fff;
+	
 
 }
 
 .ep-boxes img {
-	width: 25%;
-	height: auto;
+	display: inline-block;
+}
+
+.ep-text {
+	display: inline-block;
+	border: 1px solid;
+}
+
+.ep-text h4 {
+	font-size: 16px;
+}
+
+.ep-text p {
+	max-width: 450px;
+	color: #878787;
+	font-size: 14px;
+	text-align: left;
+	
+}
+
+.ep-text a {
+	float: right;
 }
