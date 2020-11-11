@@ -1,0 +1,49 @@
+@font-face{
+    font-family: 'Google Sans';
+    src: url('../assets/fonts/GoogleSans-Regular-v1.27.ttf');
+}
+
+.about, .footer{
+    font-family: 'Google Sans', sans-serif;
+    display: flexbox;
+    box-sizing: border-box;
+}
+
+.about{
+    padding: 64px 200px;
+    border-bottom: 1px solid #EAEAEA;
+    color: #333333;
+}
+
+.about h1{
+    font-weight: bold;
+}
+
+.about p{
+    font-size: 20px;
+}
+
+.social-media-icons:first-child{
+    padding-left: 0;
+}
+
+.social-media-icons{
+    padding: 10px;
+}
+
+.email{
+    text-decoration: none;
+    color: #4285F4;
+}
+
+.footer{
+    width: 70%;
+    border-top: 1px solid #EAEAEA;
+    padding: 20px 0;
+    margin: 216px auto 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #828282;
+}
+
