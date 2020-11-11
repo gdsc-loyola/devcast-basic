@@ -1,0 +1,41 @@
+/* main.css stylesheet: episode (Julia) */
+
+@font-face {
+	font-family: Google Sans;
+	src: url("fonts/GoogleSans-Regular-v1.27.ttf") format('truetype');
+}
+
+html {
+	background: #000;
+}
+
+.midsection-episode {
+	background: #f8f8f8;
+	font-family: google sans;
+	padding: 50px;
+}
+
+.midsection-episode h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.box-flex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.ep-boxes {
+	flex-basis: 40%;
+	margin-top: 15px;
+	margin-left: 15px;
+	padding: 2px;
+	background: #fff;
+
+}
+
+.ep-boxes img {
+	width: 25%;
+	height: auto;
+}
