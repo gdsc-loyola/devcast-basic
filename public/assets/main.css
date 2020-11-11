@@ -1,4 +1,7 @@
-/* main.css stylesheet: episode (Julia) */
+/* 
+	main.css stylesheet: episode (Julia)
+	default settings for screen width 1440px 
+*/
 
 @font-face {
 	font-family: Google Sans;
@@ -12,7 +15,7 @@
 }
 
 .midsection-episode h3 {
-	margin-left: 200px;
+	margin-left: 150px;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -35,7 +38,6 @@
 	background: #fff;
 	border-radius: 5px;
 	box-shadow: 0px 4px 2px -2px #e0e0e0;
-	
 
 }
 
@@ -43,8 +45,7 @@
 	max-width: 128px;
 	max-height: 128px;
 	padding: 6px;
-	
-	
+	border-radius: 9px;
 }
 
 .ep-text {
@@ -79,7 +80,143 @@
 	
 }
 
-@media (max-width: 769px) {
+/* 320px */
+@media (max-width: 325px) {
+	
+	.midsection-episode h3 {
+		margin-left: 0px;
+		font-size: 16px;
+	}
+	
+	.episode-cont {
+		display: grid;
+	}
+	
+	.ep-boxes {
+		width: 250px;
+		min-height: 200px;
+	}
+	
+	.ep-boxes img {
+		max-width: 90px;
+		max-height: 90px;
+	
+	}
+	
+	.ep-text h4 {
+		font-size: 13px;
+		width: 138px;
+		height: 98px;
+		line-height: 15px;
+	}
+	
+	.ep-text span {
+		position: absolute;
+		left: 0;
+		margin-left: 50px;
+		width: 250px;
+	}
+	
+	.ep-boxes a {
+		position: absolute;
+		margin-top: 170px;
+		margin-left: 165px;
+	}
+}
+
+/* 375px */
+@media (min-width: 326px) and (max-width: 380px) {
+	
+	.midsection-episode h3 {
+		margin-left: 0px;
+		font-size: 18px;
+	}
+	
+	.episode-cont {
+		display: grid;
+	}
+	
+	.ep-boxes {
+		width: 300px;
+		min-height: 210px;
+	}
+	
+	.ep-boxes img {
+		max-width: 100px;
+		max-height: 100px;
+	}
+	
+	.ep-text h4 {
+		font-size: 14px;
+		width: 170px;
+		height: 100px;
+		line-height: 17px;
+	}
+	
+	.ep-text span {
+		position: absolute;
+		left: 0;
+		margin-top: 5px;
+		margin-left: 52px;
+		width: 280px;
+		font-size: 13px;
+	}
+	
+	.ep-boxes a {
+		position: absolute;
+		margin-top: 180px;
+		margin-left: 210px;
+	}
+}
+
+/* 425px */
+@media (min-width: 381px) and (max-width: 430px) {
+	
+	.midsection-episode h3 {
+		margin-left: 5px;
+		font-size: 19px;
+	}
+	
+	.episode-cont {
+		display: grid;
+	}
+	
+	.ep-boxes {
+		width: 320px;
+		min-height: 220px;
+	}
+	
+	.ep-boxes img {
+		max-width: 108px;
+		max-height: 108px;
+	}
+	
+	.ep-text h4 {
+		font-size: 16px;
+		width: 170px;
+		height: 100px;
+		line-height: 17px;
+	}
+	
+	.ep-text span {
+		position: absolute;
+		left: 0;
+		margin-top: 13px;
+		margin-left: 67px;
+		width: 280px;
+		font-size: 14px;
+	}
+	
+	.ep-boxes a {
+		position: absolute;
+		margin-top: 190px;
+		margin-left: 225px;
+		font-size: 14px;
+	}
+}
+
+/* 768px */
+@media (min-width: 430px) and (max-width: 773px) {
 	
 	.midsection-episode h3 {
 		margin-left: 80px;
@@ -89,5 +226,14 @@
 		display: grid;
 	}
 	
+	.ep-text h4 {
+		font-size: 15px;
+	}
+}
+
+/* layout starts breaking down at 1404px fix that */
+/*
+@media (min-width: 774px) and (max-width: 1405px) {
 	
 }
+*/
