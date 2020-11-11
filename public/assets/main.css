@@ -27,34 +27,47 @@ html {
 }
 
 .ep-boxes {
+	display: inline-flex;
 	flex-basis: 40%;
+	max-width: 516px;
+	max-height: 152px;
 	margin: 15px 0px 0px 15px;
 	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 4px 2px -2px #e0e0e0;
 	
 
 }
 
 .ep-boxes img {
-	display: inline-block;
+	max-width: 128px;
+	max-height: 128px;
+	padding: 6px;
+	
+	
 }
 
 .ep-text {
-	display: inline-block;
-	border: 1px solid;
+	margin-top: 0px;
+	max-width: 288px;
 }
 
 .ep-text h4 {
+	padding: 0px;
 	font-size: 16px;
 }
 
 .ep-text p {
 	max-width: 450px;
 	color: #878787;
-	font-size: 14px;
+	font-size: 12px;
 	text-align: left;
-	
 }
 
-.ep-text a {
-	float: right;
+.ep-boxes a {
+	margin-top: 120px;
+	color: #4285f4;
+	font-size: 14px;
+	text-decoration: none;
+	
 }
