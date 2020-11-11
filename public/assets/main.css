@@ -5,10 +5,6 @@
 	src: url("fonts/GoogleSans-Regular-v1.27.ttf") format('truetype');
 }
 
-html {
-	background: #000;
-}
-
 .midsection-episode {
 	background: #f8f8f8;
 	font-family: google sans;
@@ -16,21 +12,25 @@ html {
 }
 
 .midsection-episode h3 {
+	margin-left: 200px;
 	text-transform: uppercase;
 	font-weight: bold;
+	letter-spacing: 2px;
 }
 
-.box-flex {
+.episode-cont {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	align-items: flex-start;
 }
 
 .ep-boxes {
 	display: inline-flex;
 	flex-basis: 40%;
+	flex-grow: 0;
 	max-width: 516px;
-	max-height: 152px;
+	height: auto;
 	margin: 15px 0px 0px 15px;
 	background: #fff;
 	border-radius: 5px;
@@ -49,15 +49,19 @@ html {
 
 .ep-text {
 	margin-top: 0px;
-	max-width: 288px;
+	margin-left: 5px;
+	max-width: 285px;
 }
 
 .ep-text h4 {
+	margin-top: 10px;
+	margin-bottom: 0px;
 	padding: 0px;
 	font-size: 16px;
+	line-height: 20px;
 }
 
-.ep-text p {
+.ep-text span {
 	max-width: 450px;
 	color: #878787;
 	font-size: 12px;
@@ -66,8 +70,24 @@ html {
 
 .ep-boxes a {
 	margin-top: 120px;
+	margin-bottom: 10px;
+	margin-right: 8px;
+	margin-left: 5px;
 	color: #4285f4;
-	font-size: 14px;
+	font-size: 13px;
 	text-decoration: none;
+	
+}
+
+@media (max-width: 769px) {
+	
+	.midsection-episode h3 {
+		margin-left: 80px;
+	}
+	
+	.episode-cont {
+		display: grid;
+	}
+	
 	
 }
