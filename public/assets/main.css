@@ -231,9 +231,14 @@
 	}
 }
 
-/* layout starts breaking down at 1404px fix that */
-/*
+/* 1440px */
 @media (min-width: 774px) and (max-width: 1405px) {
+	.midsection-episode h3 {
+		margin-left: 210px;
+	}
+	
+	.episode-cont {
+		display: grid;
+	}
 	
 }
-*/
