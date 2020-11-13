@@ -38,7 +38,6 @@
 	background: #fff;
 	border-radius: 5px;
 	box-shadow: 0px 4px 2px -2px #e0e0e0;
-
 }
 
 .ep-boxes img {
@@ -231,7 +230,7 @@
 	}
 }
 
-/* 1440px */
+/* 1024px */
 @media (min-width: 774px) and (max-width: 1405px) {
 	.midsection-episode h3 {
 		margin-left: 210px;
@@ -240,5 +239,4 @@
 	.episode-cont {
 		display: grid;
 	}
-	
 }
