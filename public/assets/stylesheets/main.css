@@ -7,6 +7,26 @@ body {
 	margin: 0;
 }
 
+.navBar{
+	border-bottom: 1px solid #EAEAEA;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 30px;
+}
+
+.visitUs{
+	background-color: #4285f4;
+	border-radius: 5px;
+	border-style: none;
+	width: 128px;
+	height: 40px;
+	font-size: 16px;
+	color: #ffffff;
+	text-align: center;
+	padding: 8px;
+}
+
 /******************************************** FOOTER ***********************************************/
 
 .midsection-episode {
