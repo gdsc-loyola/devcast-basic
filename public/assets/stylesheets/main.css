@@ -44,6 +44,11 @@ body {
 	font-size: 39.06px;
 }
 
+.heroDescription{
+	font-size: 20px;
+	line-height: 28px;
+}
+
 .podcastIcons:first-child{
 	padding-left: 0;
 }
