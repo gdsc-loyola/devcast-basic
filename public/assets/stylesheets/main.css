@@ -27,6 +27,31 @@ body {
 	padding: 8px;
 }
 
+.heroContainer{
+	padding: 60px 190px;
+	align-items: center;
+	font-family: 'Google Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+.hero{
+	width: 600px;
+}
+
+.devcastHeader{
+	font-weight: 500;
+	font-size: 39.06px;
+}
+
+.podcastIcons:first-child{
+	padding-left: 0;
+}
+
+.podcastIcons{
+	padding: 20px 10px 0 10px;
+}
+
 /******************************************** FOOTER ***********************************************/
 
 .midsection-episode {
