@@ -552,12 +552,24 @@ body {
 /******************************************** MODAL ***********************************************/
 
 /* default for 320,1024,1440px */
+
+.modal-cover {
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: rgb(0,0,0,.8);
+}
+
 .modal-cont {
+	visibility: hidden;
 	top: 0;
 	right: 0;
 	position: fixed;
 	height: 100%;
-	z-index:9999999;
+	z-index:999999999999999;
 	font-family: google sans;
 }
 
@@ -572,7 +584,7 @@ body {
 }
 
 .modal-close #close1,#close2 {
-	z-index: 9999999999;
+	z-index: 9999999;
 	background: #ffffff;
 	box-shadow: 0px 4px 6px rgb(220,220,220,.85);
 	width: 3px;
@@ -627,7 +639,7 @@ body {
 }
 
 .share-lines #line1, #line2 {
-	z-index: 9999999999;
+	z-index: 9999999;
 	width: 1.5px;
 	height: 9px;
 	background: #ffffff;
