@@ -57,6 +57,54 @@ body {
 	padding: 20px 10px 0 10px;
 }
 
+@media screen and (max-width: 1330px){
+	.heroContainer{
+		display: block;
+	}
+
+	.hero, .heroImg img{
+		display: block;
+		margin: 0 auto;
+	}
+
+	.hero{
+		width: 100%;
+	}
+
+	.heroImg img{
+		padding: 20px 0;
+	}
+}
+
+@media screen and (max-width:905px){
+	.heroContainer{
+		padding: 60px 100px;
+	}
+}
+
+@media screen and (max-width: 620px){
+	.heroImg img{
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 556px){
+	.podcastIcons{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.navBar img{
+		width: 60%;
+	}
+
+	.heroContainer{
+		padding: 60px 50px;
+	}
+}
+
 /******************************************** FOOTER ***********************************************/
 
 .midsection-episode {
