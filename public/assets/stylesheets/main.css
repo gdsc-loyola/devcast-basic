@@ -27,6 +27,7 @@ body {
 	color: #ffffff;
 	text-align: center;
 	padding: 8px;
+	cursor: pointer;
 }
 
 .heroContainer{
