@@ -7,6 +7,8 @@ body {
 	margin: 0;
 }
 
+/**************************************** NAVBAR and HERO *******************************************/
+
 .navBar{
 	border-bottom: 1px solid #EAEAEA;
 	display: flex;
@@ -93,15 +95,31 @@ body {
 		display: block;
 		margin: 0 auto;
 	}
-}
 
-@media screen and (max-width: 425px){
 	.navBar img{
 		width: 60%;
 	}
 
+	.visitUs{
+		width: 90px;
+		height: 35px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 425px){
 	.heroContainer{
 		padding: 60px 50px;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.navBar{
+		padding: 10px 15px;
+	}
+
+	.heroContainer{
+		padding: 60px 40px;
 	}
 }
 
