@@ -704,6 +704,12 @@ body {
 	height: 100vh;
 	overflow-y: scroll;
 	background: #ffffff;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.modal-hold::-webkit-scrollbar {
+	display: none; /*Chrome, Safari and Opera */
 }
 
 .modal-coverimg {
