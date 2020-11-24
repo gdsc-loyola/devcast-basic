@@ -716,6 +716,12 @@ body {
 	height: 320px;
 }
 
+.modal-coverimg img {
+	width: 320px;
+	height: 320px;
+	margin-bottom: 0px;
+}
+
 .modal-close #close1,#close2 {
 	z-index: 9999999;
 	background: #ffffff;
@@ -732,61 +738,10 @@ body {
 	transform: translate(287px, -333px) rotate(-45deg)
 }
 
-.modal-img img {
-	width: 320px;
-	height: 320px;
-	margin-bottom: 0px;
-}
-
-.modal-imgshare {
-	
-}
-
-#base {
-	width: 40px;
-	height: 40px;
-	background: #4285f4;
-	border-radius: 50%;
+.modal-imgshare img {
+	width: 38px;
+	height: 38px;
 	transform: translate(265px, -110px);
-	bottom-margin: 0px;
-}
-
-.share-dots #dot1,#dot2,#dot3 {
-	z-index: 9999999;
-	width: 6px;
-	height: 6px;
-	background: #ffffff;
-	border-radius: 50%;
-}
-
-#dot1 {
-	transform: translate(287px, -138px);
-}
-
-#dot2 {
-	transform: translate(276px, -138.5px);
-}
-
-#dot3 {
-	transform: translate(287px, -140px);
-}
-
-.share-lines #line1, #line2 {
-	z-index: 9999999;
-	width: 1.5px;
-	height: 9px;
-	background: #ffffff;
-}
-
-#line1 {
-	transform: translate(284px, -155px) rotate(60deg);
-}
-
-#line2 {
-	transform: translate(284px, -159px) rotate(-70deg);
-}
-
-.modal-sharelines {
 }
 
 .modal-notimgcont { 
@@ -890,6 +845,7 @@ body {
 }
 
 .speaker-shareicons {
+	width: fit-content;
 	transform: translate(65px, -55px);
 }
 
@@ -897,4 +853,8 @@ body {
 	display: inline-block;
 	width: 25px;
 	height: 25px;
+}
+
+.speaker-shareicons a {
+	text-decoration: none;
 }
