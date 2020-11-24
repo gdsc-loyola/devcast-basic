@@ -575,7 +575,8 @@ body {
 
 .modal-hold {
 	width: 320px;
-	height: 900px;
+	height: 100vh;
+	overflow-y: scroll;
 	background: #ffffff;
 }
 
