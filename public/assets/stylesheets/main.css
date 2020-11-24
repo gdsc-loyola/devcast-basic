@@ -7,6 +7,132 @@ body {
 	margin: 0;
 }
 
+/**************************************** NAVBAR and HERO *******************************************/
+
+.navBar{
+	border-bottom: 1px solid #EAEAEA;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 30px;
+}
+
+.dscCropped{
+	display: none;
+}
+
+.visitUs{
+	background-color: #4285f4;
+	border-radius: 5px;
+	border-style: none;
+	width: 128px;
+	height: 40px;
+	font-size: 16px;
+	color: #ffffff;
+	text-align: center;
+	padding: 8px;
+	cursor: pointer;
+}
+
+.heroContainer{
+	padding: 60px 190px;
+	align-items: center;
+	font-family: 'Google Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+.hero{
+	width: 600px;
+}
+
+.devcastHeader{
+	font-weight: 500;
+	font-size: 39.06px;
+}
+
+.heroDescription{
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.podcastIcons:first-child{
+	padding-left: 0;
+}
+
+.podcastIcons{
+	padding: 20px 10px 0 10px;
+}
+
+@media screen and (max-width: 1330px){
+	.heroContainer{
+		display: block;
+	}
+
+	.hero, .heroImg img{
+		display: block;
+		margin: 0 auto;
+	}
+
+	.hero{
+		width: 100%;
+	}
+
+	.heroImg img{
+		padding: 20px 0;
+	}
+}
+
+@media screen and (max-width:905px){
+	.heroContainer{
+		padding: 60px 100px;
+	}
+}
+
+@media screen and (max-width: 620px){
+	.heroImg img{
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 556px){
+	.podcastIcons{
+		display: block;
+		margin: 0 auto;
+	}
+
+	.dscLogo{
+		display: none;
+	}
+
+	.dscCropped{
+		display: block;
+		width: 50px;
+	}
+
+	.visitUs{
+		width: 90px;
+		height: 35px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.heroContainer{
+		padding: 60px 50px;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.navBar{
+		padding: 10px 15px;
+	}
+
+	.heroContainer{
+		padding: 60px 40px;
+	}
+}
+
 /******************************************** FOOTER ***********************************************/
 
 .midsection-episode {
