@@ -1,17 +1,20 @@
 var episode1 = document.getElementById("episode1");
 var episode2 = document.getElementById("episode2");
 
-var title = document.getElementById("modal-episode-title").innerHTML;
-
 function playEpisode(){
-    if (title == "S01E01") {
+    if (document.getElementById('modal-episode-title').innerHTML == 'S01E01') {
         episode1.play();
-    } else if (title == "S01E02") {
+    } else if (document.getElementById('modal-episode-title').innerHTML == 'S01E02') {
         episode2.play();
     }
 }
 
 function stopEpisode(){
-    episode1.pause();
-    episode1.currentTime = 0;
+    if (!episode1.paused) {
+        episode1.pause();
+        episode1.currentTime = 0;
+    } else if (!episode2.paused) {
+        episode2.pause();
+        episode2.currentTime = 0;
+    }
 }
