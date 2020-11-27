@@ -17,7 +17,11 @@
     
   </head>
   <body>
-  
+
+	<!-- audio files -->
+	<audio src="./assets/audios/DevCast Episode 01_FINAL.mp3" id="episode1"></audio>
+	<audio src="./assets/audios/DevCast Episode 02_FINAL.mp3" id="episode2"></audio>
+
   <!-- navbar -->
   <nav class="navBar">
     <img src="./assets/images/[DSC-L] Colored Horizontal (2) 1.png" alt="DSC Logo" class="dscLogo">
@@ -105,7 +109,7 @@
 				<img src="https://placehold.co/320x320/000000/000000/png">
 				<div class="modal-close">
 					<!--modal close-->
-					<a href="#!" onclick="document.querySelector('.modal-cont').style.visibility='hidden';document.querySelector('.modal-cover').style.visibility='hidden'">
+					<a href="#!" onclick="document.querySelector('.modal-cont').style.visibility='hidden';document.querySelector('.modal-cover').style.visibility='hidden'; stopEpisode()">
 						<div id="close1"></div>
 						<div id="close2"></div>
 					</a>
@@ -124,13 +128,13 @@
 				</div>
 				<div class="modal-player">
 					<div class="player-text">
-						<span>S01E01</span>
+						<span id="modal-episode-title">S01E01</span>
 						<p>Seizing the Opportunity to Lead</p>
 						<span>Bruce Alturas</span>
 					</div>
 					<div class="player-img">
 						<div id="player-bg"></div>
-						<div class="player-btn">
+						<div class="player-btn" onclick="playEpisode()">
 							<div id="player-btncircle"></div>
 							<div id="player-btnsymb"></div>
 						</div>
@@ -158,6 +162,8 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="./assets/scripts/audio.js"></script>
 
     <script>
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
