@@ -805,6 +805,10 @@ body {
 	transform: translateY(-70px);
 }
 
+.player-btn {
+	cursor: pointer;
+}
+
 .player-btn #player-btncircle {
 	width: 50px;
 	height: 50px;

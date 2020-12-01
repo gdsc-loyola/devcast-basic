@@ -31,13 +31,16 @@ function pauseEpisode(){
 }
 
 function stopEpisode(){
-    if (!episode1.paused) {
+    if (episode1.currentTime > 0) {
         episode1.pause();
         episode1.currentTime = 0;
-    } else if (!episode2.paused) {
+    } else if (episode2.currentTime > 0) {
         episode2.pause();
         episode2.currentTime = 0;
     }
+
+    playBtn.style.display = 'block';
+    pauseBtn.style.display = 'none';
 }
 
 function secondsToTime(seconds) {
