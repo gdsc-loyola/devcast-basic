@@ -817,6 +817,21 @@ body {
 	transform: translate(28px, -168px);
 }
 
+#paused {
+	display: none;
+	position: absolute;
+	top: 13.5px;
+	left: 16px;
+}
+
+.pause-line {
+	display: inline-block;
+	width: 7px;
+	height: 22px;
+	background-color: #f0f0f0;
+	border-radius: 2px;
+}
+
 .modal-speaker {
 	margin-top: 0px;
 }
