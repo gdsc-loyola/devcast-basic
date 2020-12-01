@@ -19,8 +19,8 @@
   <body>
 
 	<!-- audio files -->
-	<audio src="./assets/audios/DevCast Episode 01_FINAL.mp3" id="episode1"></audio>
-	<audio src="./assets/audios/DevCast Episode 02_FINAL.mp3" id="episode2"></audio>
+	<audio src="./assets/audios/DevCast Episode 01_FINAL.mp3" id="episode1" ontimeupdate="displayDuration()"></audio>
+	<audio src="./assets/audios/DevCast Episode 02_FINAL.mp3" id="episode2" ontimeupdate="displayDuration()"></audio>
 
   <!-- navbar -->
   <nav class="navBar">
@@ -129,6 +129,7 @@
 				<div class="modal-player">
 					<div class="player-text">
 						<span id="modal-episode-title">S01E01</span>
+						<span id="duration">0:00 / 0:00</span>
 						<p>Seizing the Opportunity to Lead</p>
 						<span>Bruce Alturas</span>
 					</div>
