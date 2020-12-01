@@ -796,6 +796,7 @@ body {
 	margin-left: 80px;
 	width: 200px;
 	height: 70px;
+	position: relative;
 }
 
 .player-text span {
@@ -803,6 +804,12 @@ body {
 	font-size: 9px;
 	font-weight: bold;
 	letter-spacing: 1px;
+}
+
+#duration {
+	position: absolute;
+	right: 10px;
+	top: 5px;
 }
 
 .player-text p {
@@ -838,6 +845,21 @@ body {
 	background: #f0f0f0;
 	border-radius: 5px;
 	transform: translate(28px, -168px);
+}
+
+#paused {
+	display: none;
+	position: absolute;
+	top: 13.5px;
+	left: 16px;
+}
+
+.pause-line {
+	display: inline-block;
+	width: 7px;
+	height: 22px;
+	background-color: #f0f0f0;
+	border-radius: 2px;
 }
 
 .modal-speaker {

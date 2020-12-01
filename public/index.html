@@ -17,6 +17,10 @@
     
   </head>
   <body>
+
+		<!-- audio files -->
+		<audio src="./assets/audios/DevCast Episode 01_FINAL.mp3" id="episode1" ontimeupdate="displayDuration()"></audio>
+		<audio src="./assets/audios/DevCast Episode 02_FINAL.mp3" id="episode2" ontimeupdate="displayDuration()"></audio>
   
   <!-- navbar -->
   <nav class="navBar">
@@ -98,14 +102,14 @@
     </footer>
 	
 	<!----MODAL----->
-	<div class="modal-cover"></div>
+	<div class="modal-cover" onclick="modal(0)"></div>
 	<div class="modal-cont">
 		<div class="modal-hold">
 			<div class="modal-coverimg">
 				<img id="modalimg" src="">
 				<div class="modal-close">
 					<!--modal close-->
-					<a href="#!" onclick="modal(0)">
+					<a href="#!" onclick="modal(0); stopEpisode()">
 						<div id="close1"></div>
 						<div id="close2"></div>
 					</a>
@@ -125,13 +129,19 @@
 				<div class="modal-player">
 					<div class="player-text">
 						<span id="modalplayernum"></span>
+						<span id="duration">00:00 / 00:00</span>
 						<p id="modalplayerhead"></p>
 						<span id="modalplayerauth"></span>
 					</div>
 					<div class="player-img">
 						<div id="player-bg"></div>
-						<div class="player-btn">
-							<div id="player-btncircle"></div>
+						<div class="player-btn" onclick="playEpisode()">
+							<div id="player-btncircle">
+								<div id="paused">
+									<div class="pause-line"></div>
+									<div class="pause-line"></div>
+								</div>
+							</div>
 							<div id="player-btnsymb"></div>
 						</div>
 					</div>
@@ -160,6 +170,7 @@
 	</div>
 	
 	<script src="./assets/scripts/main.js"></script>
+	<script src="./assets/scripts/audio.js"></script>
 
     <script>
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
