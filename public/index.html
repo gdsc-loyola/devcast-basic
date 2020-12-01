@@ -47,36 +47,36 @@
 		<h3>Season One</h3>
 		<div class="episode-cont">
 			<div class="ep-boxes">
-				<img src="https://placehold.co/200x200/000000/000000/png">
+				<img id="box1img" src="./assets/images/Bruce Alturas.png">
 				<div class="ep-text">
-					<h4>Episode 1: Seizing the Opportunity to Lead in DSC</h4>
-					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+					<h4 id="box1h">Episode 1: Seizing the Opportunity to Lead in DSC</h4>
+					<span id="box1t">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
 				</div>
-				<a href="#!" onclick="document.querySelector('.modal-cont').style.visibility='visible'; document.querySelector('.modal-cover').style.visibility='visible'">Read more ></a>
+				<a href="#!" id="box1" onclick="modal(1)">Read more ></a>
 			</div>
 			<div class="ep-boxes">
-				<img src="https://placehold.co/200x200/000000/000000/png">
+				<img id="box2img" src="https://placehold.co/200x200/000000/000000/png">
 				<div class="ep-text">
-					<h4>Episode 2: Overcoming Challenges in Transitioning to a Tech Degree from a Non-Programming Background</h4>
-					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+					<h4 id="box2h">Episode 2: Overcoming Challenges in Transitioning to a Tech Degree from a Non-Programming Background</h4>
+					<span id="box2t">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
 				</div>
-				<a href="#!" onclick="document.querySelector('.modal-cont').style.visibility='visible'; document.querySelector('.modal-cover').style.visibility='visible'">Read more ></a>
+				<a href="#!" onclick="modal(2)">Read more ></a>
 			</div>
 			<div class="ep-boxes">
-				<img src="https://placehold.co/200x200/000000/000000/png">
+				<img id="box3img" src="https://placehold.co/200x200/000000/000000/png">
 				<div class="ep-text">
-					<h4>Episode 3: Title</h4>
-					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+					<h4 id="box3h">Episode 3: Title for third box</h4>
+					<span id="box3t">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
 				</div>
-				<a href="#!" onclick="document.querySelector('.modal-cont').style.visibility='visible'; document.querySelector('.modal-cover').style.visibility='visible'">Read more ></a>
+				<a href="#!" onclick="modal(3)">Read more ></a>
 			</div>
 			<div class="ep-boxes">
-				<img src="https://placehold.co/200x200/000000/000000/png">
+				<img id="box4img" src="https://placehold.co/200x200/000000/000000/png">
 				<div class="ep-text">
-					<h4>Episode 4: Title</h4>
-					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+					<h4 id="box4h">Episode 4: Title for fourth box</h4>
+					<span id="box4t">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
 				</div>
-				<a href="#!" onclick="document.querySelector('.modal-cont').style.visibility='visible'; document.querySelector('.modal-cover').style.visibility='visible'">Read more ></a>
+				<a href="#!" onclick="modal(4)">Read more ></a>
 			</div>
 		</div>
 	</div>
@@ -102,10 +102,10 @@
 	<div class="modal-cont">
 		<div class="modal-hold">
 			<div class="modal-coverimg">
-				<img src="https://placehold.co/320x320/000000/000000/png">
+				<img id="modalimg" src="">
 				<div class="modal-close">
 					<!--modal close-->
-					<a href="#!" onclick="document.querySelector('.modal-cont').style.visibility='hidden';document.querySelector('.modal-cover').style.visibility='hidden'">
+					<a href="#!" onclick="modal(0)">
 						<div id="close1"></div>
 						<div id="close2"></div>
 					</a>
@@ -119,14 +119,14 @@
 			</div>
 			<div class="modal-notimgcont">
 				<div class="modal-text">
-					<h4>Episode 1: Seizing the Opportunity to Lead in DSC</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<h4 id="modalh"></h4>
+					<p id="modalt"></p>
 				</div>
 				<div class="modal-player">
 					<div class="player-text">
-						<span>S01E01</span>
-						<p>Seizing the Opportunity to Lead</p>
-						<span>Bruce Alturas</span>
+						<span id="modalplayernum"></span>
+						<p id="modalplayerhead"></p>
+						<span id="modalplayerauth"></span>
 					</div>
 					<div class="player-img">
 						<div id="player-bg"></div>
@@ -138,8 +138,8 @@
 				</div>
 				<div class="modal-speaker">
 					<h5>Speaker</h5>
-					<img id="speaker-img" src="https://placehold.co/200x200/000000/000000/png">
-					<p>Bruce Alturas</p>
+					<img id="speaker-img" src="">
+					<p id="modalspeaker"></p>
 					<div class="speaker-shareicons">
 						<a href="https://www.facebook.com/dscloyola" target="_blank" rel="noopener noreferrer">
 							<img src="./assets/images/Facebook.png" alt="Facebook Icon" class="social-media-icons">
@@ -158,6 +158,8 @@
 			</div>
 		</div>
 	</div>
+	
+	<script src="./assets/scripts/main.js"></script>
 
     <script>
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
