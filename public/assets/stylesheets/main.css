@@ -7,7 +7,6 @@ body {
 	margin: 0;
 }
 
-
 /**************************************** NAVBAR and HERO *******************************************/
 
 .navBar{
@@ -143,7 +142,7 @@ body {
 }
 
 .midsection-episode h3 {
-	margin-left: 140px;
+	margin-left: 11%;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -204,14 +203,13 @@ body {
 	color: #4285f4;
 	font-size: 13px;
 	text-decoration: none;
-	
 }
 
 /* <=325px (320px) */
 @media (max-width: 326px) {
 	
 	.midsection-episode h3 {
-		margin-left: -15px;
+		margin-left: -5%;
 		font-size: 16px;
 	}
 	
@@ -255,7 +253,7 @@ body {
 @media (min-width: 326px) and (max-width: 380px) {
 	
 	.midsection-episode h3 {
-		margin-left: 0px;
+		margin-left: -3%;
 		font-size: 18px;
 	}
 	
@@ -300,7 +298,7 @@ body {
 @media (min-width: 381px) and (max-width: 450px) {
 	
 	.midsection-episode h3 {
-		margin-left: 5px;
+		margin-left: 1%;
 		font-size: 19px;
 	}
 	
@@ -346,7 +344,7 @@ body {
 @media (min-width: 450px) and (max-width: 511px) {
 	
 	.midsection-episode h3 {
-		margin-left: 0px;
+		margin-left: -5%;
 		font-size: 20px;
 	}
 	
@@ -392,7 +390,7 @@ body {
 @media (min-width: 511px) and (max-width: 550px) {
 	
 	.midsection-episode h3 {
-		margin-left: 0px;
+		margin-left: 5%;
 		font-size: 20px;
 	}
 	
@@ -438,7 +436,7 @@ body {
 @media (min-width: 550px) and (max-width: 601px) {
 	
 	.midsection-episode h3 {
-		margin-left: 70px;
+		margin-left: 9%;
 		font-size: 20px;
 	}
 	
@@ -484,7 +482,7 @@ body {
 @media (min-width: 600px) and (max-width: 630px) {
 	
 	.midsection-episode h3 {
-		margin-left: 70px;
+		margin-left: 11%;
 		font-size: 20px;
 	}
 	
@@ -530,7 +528,7 @@ body {
 @media (min-width: 630px) and (max-width: 651px) {
 	
 	.midsection-episode h3 {
-		margin-left: 70px;
+		margin-left: 15%;
 		font-size: 20px;
 	}
 	
@@ -572,8 +570,8 @@ body {
 	}
 }
 
-/* 651-772px (768px) */
-@media (min-width: 651px) and (max-width: 773px) {
+/* 651-1024px (768px) */
+@media (min-width: 651px) and (max-width: 1023px) {
 	
 	.midsection-episode h3 {
 		margin-left: 80px;
@@ -584,14 +582,104 @@ body {
 	}
 }
 
-/* 773-1404px (1024px) */
-@media (min-width: 773px) and (max-width: 1405px) {
+/* 1024-1100px (1024px) */
+@media (min-width: 1023px) and (max-width: 1100px) {
 	.midsection-episode h3 {
-		margin-left: 210px;
+		margin-left: 2%;
 	}
 	
-	.episode-cont {
-		display: grid;
+	.ep-boxes {
+		flex: 0;
+		align-self: stretch;
+	}
+	
+	.ep-boxes img {
+		margin-top: 5px;
+		max-width: 120px;
+		max-height: 120px;
+	}
+	
+	.ep-text {
+		width: 220px;
+	}
+	
+	.ep-text h4 {
+		font-size: 13px;
+	}
+	
+	.ep-text span {
+		font-size: 12px;
+	}
+	
+	.ep-boxes a {
+		width: 70px;
+		font-size: 12px;
+	}
+}
+
+/* 1101-1200px (1200px) */
+@media (min-width: 1101px) and (max-width: 1200px) {
+	.midsection-episode h3 {
+		margin-left: 2%;
+	}
+	
+	.ep-boxes {
+		flex: 0;
+		align-self: stretch;
+	}
+	
+	.ep-boxes img {
+		margin-top: 5px;
+		max-width: 120px;
+		max-height: 120px;
+	}
+	
+	.ep-text {
+		width: 240px;
+	}
+	
+	.ep-text h4 {
+		font-size: 14px;
+	}
+	
+	.ep-text span {
+		font-size: 12px;
+	}
+	
+	.ep-boxes a {
+		width: 70px;
+		font-size: 12px;
+	}
+}
+
+/* 1201-1390px (1300px) */
+@media (min-width: 1201px) and (max-width: 1390px) {
+	.midsection-episode h3 {
+		margin-left: 2%;
+	}
+	
+	.ep-boxes {
+		flex: 0;
+		align-self: stretch;
+	}
+	
+	.ep-boxes img {
+		margin-top: 5px;
+		max-width: 120px;
+		max-height: 120px;
+	}
+	
+	.ep-text {
+		width: 310px;
+	}
+	
+	.ep-text span {
+		font-size: 13px;
+	}
+	
+	.ep-boxes a {
+		width: 80px;
+		font-size: 13px;
 	}
 }
 
@@ -714,7 +802,6 @@ body {
 	-ms-transition: all ease-in-out .5s;
 	-o-transition: all ease-in-out .5s;
 	transition: all ease-in-out .5s;
-
 }
 
 .modal-cont.open {
