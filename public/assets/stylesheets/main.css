@@ -193,6 +193,11 @@ body {
 	color: #878787;
 	font-size: 12px;
 	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
 }
 
 .ep-boxes a {
