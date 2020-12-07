@@ -977,13 +977,13 @@ body {
 
 .speaker-shareicons {
 	width: fit-content;
-	transform: translate(65px, -55px);
+	transform: translate(65px, -42px);
 }
 
 .speaker-shareicons img {
 	display: inline-block;
-	width: 25px;
-	height: 25px;
+	width: 26px;
+	height: 26px;
 }
 
 .speaker-shareicons a {
