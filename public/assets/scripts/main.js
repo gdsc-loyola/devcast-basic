@@ -24,7 +24,7 @@ function modal(check) {
 				 document.getElementById("modalplayernum").innerHTML = "S01E01";
 				 document.getElementById("modalplayerhead").innerHTML = document.getElementById("box1h").innerHTML.substring(10,43);
 				 document.getElementById("modalplayerauth").innerHTML = box1speaker;
-				 document.getElementById("speaker-img").src = './assets/images/BruceAlturasIcon.png';
+				 document.getElementById("speaker-img").src = document.getElementById("box1img").src;
 				 document.getElementById("modalspeaker").innerHTML = box1speaker;
 				break;
 			case 2:

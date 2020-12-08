@@ -1,10 +1,12 @@
 const episode1 = document.getElementById("episode1");
 const episode2 = document.getElementById("episode2");
+const episode3 = document.getElementById("episode3");
+const episode4 = document.getElementById("episode4");
 const playBtn = document.getElementById('player-btnsymb');
 const pauseBtn = document.getElementById('paused');
 let durationText = document.getElementById('duration');
 
-if (!episode1.paused || !episode2.paused) {
+if (!episode1.paused || !episode2.paused || !episode3.paused || !episode4.paused) {
     playBtn.style.display = 'none';
     pauseBtn.style.display = 'block';
 }
@@ -14,6 +16,10 @@ function playEpisode(){
         episode1.play();
     } else if (document.getElementById('modalplayernum').innerHTML == 'S01E02') {
         episode2.play();
+    } else if (document.getElementById('modalplayernum').innerHTML == 'S01E03') {
+        episode3.play();
+    } else if (document.getElementById('modalplayernum').innerHTML == 'S01E04') {
+        episode4.play();
     }
 
     if (playBtn.style.display != 'none') {
@@ -32,6 +38,10 @@ function pauseEpisode(){
         episode1.pause();
     } else if (!episode2.paused) {
         episode2.pause();
+    } else if (!episode3.paused) {
+        episode3.pause();
+    } else if (!episode4.paused) {
+        episode4.pause();
     }
 }
 
@@ -42,6 +52,12 @@ function stopEpisode(){
     } else if (episode2.currentTime > 0) {
         episode2.pause();
         episode2.currentTime = 0;
+    } else if (episode3.currentTime > 0) {
+        episode3.pause();
+        episode3.currentTime = 0;
+    } else if (episode4.currentTime > 0) {
+        episode4.pause();
+        episode4.currentTime = 0;
     }
 
     playBtn.style.display = 'block';
@@ -68,6 +84,10 @@ function displayDuration() {
     if (document.getElementById('modalplayernum').innerHTML == 'S01E01') {
         durationText.innerHTML = secondsToTime(episode1.currentTime) + " / " + secondsToTime(episode1.duration);
     } else if (document.getElementById('modalplayernum').innerHTML == 'S01E02') {
-        durationText.innerHTML = secondsToTime(episode2.currentTime) + " / " + secondsToTime(episode2.duration);;
+        durationText.innerHTML = secondsToTime(episode2.currentTime) + " / " + secondsToTime(episode2.duration);
+    }  else if (document.getElementById('modalplayernum').innerHTML == 'S01E03') {
+        durationText.innerHTML = secondsToTime(episode3.currentTime) + " / " + secondsToTime(episode3.duration);
+    }  else if (document.getElementById('modalplayernum').innerHTML == 'S01E04') {
+        durationText.innerHTML = secondsToTime(episode4.currentTime) + " / " + secondsToTime(episode4.duration);
     }
 }
