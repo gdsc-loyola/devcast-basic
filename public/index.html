@@ -11,18 +11,19 @@
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-storage.js"></script>  
 
-	  <link rel="stylesheet" href="./assets/stylesheets/main.css">
+	<link rel="stylesheet" href="./assets/stylesheets/main.css">
     
   </head>
   <body>
 
 		<!-- audio files -->
-		<audio src="./assets/audios/DevCast Episode 01_FINAL.mp3" id="episode1" ontimeupdate="displayDuration()"></audio>
-		<audio src="./assets/audios/DevCast Episode 02_FINAL.mp3" id="episode2" ontimeupdate="displayDuration()"></audio>
-		<!-- <audio src="./assets/audios/DevCast Episode 03_FINAL - RELEASE FILE.mp3" id="episode3" ontimeupdate="displayDuration()"></audio> -->
-		<audio src="./assets/audios/DevCast Episode 04_FINAL.mp3" id="episode4" ontimeupdate="displayDuration()"></audio>
+		<audio src="" id="episode1" ontimeupdate="displayDuration()"></audio>
+		<audio src="" id="episode2" ontimeupdate="displayDuration()"></audio>
+		<audio src="" id="episode3" ontimeupdate="displayDuration()"></audio>
+		<audio src="" id="episode4" ontimeupdate="displayDuration()"></audio>
   
   <!-- navbar -->
   <nav class="navBar">
@@ -80,7 +81,7 @@
 				<img id="box4img" src="./assets/images/BautistaFrancis.jpg">
 				<div class="ep-text">
 					<h4 id="box4h">Episode 4: What It's Like to Manage an Artificial Intelligence Startup in the Philippines</h4>
-					<span id="box4t">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+					<span id="box4t">Francis joins us on DevCast to talk about the humble beginnings of Indigo Research and how it has scaled into the startup company it is today. He shares the reality of the startup environment in the country which is not and how Indigo Research managed to establish its niche in the market. He also shares how he manages risks and decision-making as the CEO in order to lead his startup to success.</span>
 				</div>
 				<a href="#!" onclick="modal(4)">Read more ></a>
 			</div>
@@ -170,9 +171,6 @@
 			</div>
 		</div>
 	</div>
-	
-	<script src="./assets/scripts/main.js"></script>
-	<script src="./assets/scripts/audio.js"></script>
 
     <script>
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -188,7 +186,10 @@
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
+	  firebase.analytics();
+	</script>
+
+	<script src="./assets/scripts/main.js"></script>
+	<script src="./assets/scripts/audio.js"></script>
   </body>
 </html>
