@@ -32,6 +32,17 @@ body {
 	text-align: center;
 	padding: 8px;
 	cursor: pointer;
+	-webkit-transition: all ease-in-out .2s;
+	-moz-transition: all ease-in-out .2s;
+	-ms-transition: all ease-in-out .2s;
+	-o-transition: all ease-in-out .2s;
+	transition: all ease-in-out .2s;
+}
+
+.visitUs:hover {
+	background-color: #ffffff;
+	border: 1px solid #4285f4;
+	color: #4285f4;
 }
 
 .heroContainer{
@@ -717,6 +728,10 @@ body {
     padding: 10px;
 }
 
+.social-media-icons:hover {
+	filter: invert(100%);
+}
+
 .email{
     text-decoration: none;
     color: #4285F4;
@@ -995,4 +1010,8 @@ body {
 
 .speaker-shareicons a {
 	text-decoration: none;
+}
+
+#modfb:hover, #modtwt:hover, #modig:hover, #modlinkedin:hover {
+	filter: invert(100%);
 }
