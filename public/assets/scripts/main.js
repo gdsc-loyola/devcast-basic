@@ -19,6 +19,7 @@ function modal(check) {
 		switch(check) {
 			case 1:
 				 document.getElementById("modalimg").src =  document.getElementById("box1img").src;
+				 document.getElementById("blueshare").href = "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpodcasts.google.com%2Fu%2F1%2Ffeed%2FaHR0cHM6Ly9hbmNob3IuZm0vcy8zYmM1YTMyNC9wb2RjYXN0L3Jzcw%2Fepisode%2FM2JjYjQ1MGMtN2RhMC00YjRkLWE4ODUtMzYzMzBlMzU0YzNl;src=sdkpreparse";
 				 document.getElementById("modalh").innerHTML = document.getElementById("box1h").innerHTML;
 				 document.getElementById("modalt").innerHTML = document.getElementById("box1t").innerHTML;
 				 document.getElementById("modalplayernum").innerHTML = "S01E01";
@@ -33,6 +34,7 @@ function modal(check) {
 				break;
 			case 2:
 				document.getElementById("modalimg").src =  document.getElementById("box2img").src;
+				document.getElementById("blueshare").href ="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpodcasts.google.com%2Fu%2F1%2Ffeed%2FaHR0cHM6Ly9hbmNob3IuZm0vcy8zYmM1YTMyNC9wb2RjYXN0L3Jzcw%2Fepisode%2FZDM0ZDZhODMtZmIyZi00Yjc5LWIwMmYtMWYzMzgzMDFhNzgz;src=sdkpreparse";
 				document.getElementById("modalh").innerHTML = document.getElementById("box2h").innerHTML;
 				document.getElementById("modalt").innerHTML = document.getElementById("box2t").innerHTML;
 				document.getElementById("modalplayernum").innerHTML = "S01E02";
@@ -48,10 +50,11 @@ function modal(check) {
 				break;
 			case 3:
 				document.getElementById("modalimg").src =  document.getElementById("box3img").src;
+				document.getElementById("blueshare").href = "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpodcasts.google.com%2Fu%2F1%2Ffeed%2FaHR0cHM6Ly9hbmNob3IuZm0vcy8zYmM1YTMyNC9wb2RjYXN0L3Jzcw%2Fepisode%2FYmZjMzk5ZjQtNmJjNi00YjIyLThkNWMtMjRhMDYzMmUwNmVi;src=sdkpreparse";
 				document.getElementById("modalh").innerHTML = document.getElementById("box3h").innerHTML;
 				document.getElementById("modalt").innerHTML = document.getElementById("box3t").innerHTML;
 				document.getElementById("modalplayernum").innerHTML = "S01E03";
-				document.getElementById("modalplayerhead").innerHTML = document.getElementById("box3h").innerHTML.substring(10,43);
+				document.getElementById("modalplayerhead").innerHTML = document.getElementById("box3h").innerHTML.substring(10,42);
 				document.getElementById("modalplayerauth").innerHTML = box3speaker;
 				document.getElementById("speaker-img").src = document.getElementById("box3img").src;
 				document.getElementById("modalspeaker").innerHTML = box3speaker;
@@ -63,10 +66,11 @@ function modal(check) {
 				break;
 			case 4:
 				document.getElementById("modalimg").src =  document.getElementById("box4img").src;
+				document.getElementById("blueshare").href = "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpodcasts.google.com%2Fu%2F1%2Ffeed%2FaHR0cHM6Ly9hbmNob3IuZm0vcy8zYmM1YTMyNC9wb2RjYXN0L3Jzcw";
 				document.getElementById("modalh").innerHTML = document.getElementById("box4h").innerHTML;
 				document.getElementById("modalt").innerHTML = document.getElementById("box4t").innerHTML;
 				document.getElementById("modalplayernum").innerHTML = "S01E04";
-				document.getElementById("modalplayerhead").innerHTML = document.getElementById("box4h").innerHTML.substring(10,43);
+				document.getElementById("modalplayerhead").innerHTML = document.getElementById("box4h").innerHTML.substring(10,36);
 				document.getElementById("modalplayerauth").innerHTML = box4speaker;
 				document.getElementById("speaker-img").src = document.getElementById("box4img").src;
 				document.getElementById("modalspeaker").innerHTML = box4speaker;
@@ -78,6 +82,7 @@ function modal(check) {
 				break;
 			case 5:
 				document.getElementById("modalimg").src =  document.getElementById("box5img").src;
+				document.getElementById("blueshare").href = "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpodcasts.google.com%2Fu%2F1%2Ffeed%2FaHR0cHM6Ly9hbmNob3IuZm0vcy8zYmM1YTMyNC9wb2RjYXN0L3Jzcw";
 				document.getElementById("modalh").innerHTML = document.getElementById("box5h").innerHTML;
 				document.getElementById("modalt").innerHTML = document.getElementById("box5t").innerHTML;
 				document.getElementById("modalplayernum").innerHTML = "S01E05";
