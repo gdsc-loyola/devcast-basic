@@ -2,9 +2,12 @@
 
 let op = false;
 var check = 0;
-var box1speaker = "Bruce Alturas"
-var restboxspeakerimg = "https://icon-library.com/images/generic-user-icon/generic-user-icon-10.jpg"
-var restboxspeaker = "Blank"
+var box1speaker = "Bruce Alturas";
+var box2speaker = "Anike Nicole Dorgu";
+var box3speaker = "Joshua de Guzman";
+var box4speaker = "Francis Bautista";
+var restboxspeakerimg = "https://icon-library.com/images/generic-user-icon/generic-user-icon-10.jpg";
+var restboxspeaker = "Blank";
 
 function modal(check) {
 
@@ -21,7 +24,7 @@ function modal(check) {
 				 document.getElementById("modalplayernum").innerHTML = "S01E01";
 				 document.getElementById("modalplayerhead").innerHTML = document.getElementById("box1h").innerHTML.substring(10,43);
 				 document.getElementById("modalplayerauth").innerHTML = box1speaker;
-				 document.getElementById("speaker-img").src = './assets/images/BruceAlturasIcon.png';
+				 document.getElementById("speaker-img").src = document.getElementById("box1img").src;
 				 document.getElementById("modalspeaker").innerHTML = box1speaker;
 				 document.getElementById("modfb").href = "https://www.facebook.com/brucevinceal";
 				 document.getElementById("modtwt").style.display = "none";

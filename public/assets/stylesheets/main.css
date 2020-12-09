@@ -193,6 +193,11 @@ body {
 	color: #878787;
 	font-size: 12px;
 	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
 }
 
 .ep-boxes a {
@@ -239,7 +244,7 @@ body {
 		position: absolute;
 		left: 0;
 		margin-left: 45px;
-		width: 250px;
+		width: 230px;
 	}
 	
 	.ep-boxes a {
@@ -861,17 +866,18 @@ body {
 	font-size: 16px;
 	font-weight: bold;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 15px;
 }
 
 .modal-text p {
 	margin-top: 3px;
 	color: #8c8c8c;
 	font-size: 12px;
+	margin-bottom: 15px;
 }
 
 .modal-player {
-	margin-bottom: 0px;
+	margin-bottom: 15px;
 	width: 280px;
 	height: 70px;
 	border-radius: 5px;
@@ -977,7 +983,8 @@ body {
 
 .speaker-shareicons {
 	width: fit-content;
-	transform: translate(65px, -42px);
+	transform: translate(65px, -55px);
+	margin-top: 3px;
 }
 
 .speaker-shareicons img {
