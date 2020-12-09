@@ -984,7 +984,7 @@ body {
 .speaker-shareicons {
 	width: fit-content;
 	transform: translate(65px, -55px);
-	margin-top: 3px;
+	margin-top: 10px;
 }
 
 .speaker-shareicons img {
