@@ -729,7 +729,7 @@ body {
 }
 
 .social-media-icons:hover {
-	filter: invert(100%);
+	filter: invert(50%);
 }
 
 .email{
@@ -1013,5 +1013,5 @@ body {
 }
 
 #modfb:hover, #modtwt:hover, #modig:hover, #modlinkedin:hover {
-	filter: invert(100%);
+	filter: invert(50%);
 }
