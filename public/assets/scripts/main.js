@@ -25,7 +25,7 @@ function modal(check) {
 				 document.getElementById("modalplayernum").innerHTML = "S01E01";
 				 document.getElementById("modalplayerhead").innerHTML = document.getElementById("box1h").innerHTML.substring(10,43);
 				 document.getElementById("modalplayerauth").innerHTML = box1speaker;
-				 document.getElementById("speaker-img").src = document.getElementById("box1img").src;
+				 document.getElementById("speaker-img").src = "./assets/images/BruceAlturasIcon.jpg";
 				 document.getElementById("modalspeaker").innerHTML = box1speaker;
 				 document.getElementById("modfb").href = "https://www.facebook.com/brucevinceal";
 				 document.getElementById("modtwt").style.display = "none";
@@ -40,7 +40,7 @@ function modal(check) {
 				document.getElementById("modalplayernum").innerHTML = "S01E02";
 				document.getElementById("modalplayerhead").innerHTML = document.getElementById("box2h").innerHTML.substring(10,43);
 				document.getElementById("modalplayerauth").innerHTML = box2speaker;
-				document.getElementById("speaker-img").src = document.getElementById("box2img").src;
+				document.getElementById("speaker-img").src = "./assets/images/AnikeDorgu.jpg";
 				document.getElementById("modalspeaker").innerHTML = box2speaker;
 				document.getElementById("modfb").href = "https://www.facebook.com/nixdorgu";
 				document.getElementById("modtwt").style.display =  "initial"; // when not set to initial case 1 hides every other case's twitter
@@ -56,7 +56,7 @@ function modal(check) {
 				document.getElementById("modalplayernum").innerHTML = "S01E03";
 				document.getElementById("modalplayerhead").innerHTML = document.getElementById("box3h").innerHTML.substring(10,42);
 				document.getElementById("modalplayerauth").innerHTML = box3speaker;
-				document.getElementById("speaker-img").src = document.getElementById("box3img").src;
+				document.getElementById("speaker-img").src = "./assets/images/JoshuadeGuzman.jpg";
 				document.getElementById("modalspeaker").innerHTML = box3speaker;
 				document.getElementById("modfb").href = "https://www.facebook.com/deguzmanjoshuam";
 				document.getElementById("modtwt").style.display =  "initial"; // when not set to initial case 1 hides every other case's twitter
@@ -72,7 +72,7 @@ function modal(check) {
 				document.getElementById("modalplayernum").innerHTML = "S01E04";
 				document.getElementById("modalplayerhead").innerHTML = document.getElementById("box4h").innerHTML.substring(10,36);
 				document.getElementById("modalplayerauth").innerHTML = box4speaker;
-				document.getElementById("speaker-img").src = document.getElementById("box4img").src;
+				document.getElementById("speaker-img").src = "./assets/images/BautistaFrancis.jpg";
 				document.getElementById("modalspeaker").innerHTML = box4speaker;
 				document.getElementById("modfb").href = "https://www.facebook.com/francismichaelbautista";
 				document.getElementById("modtwt").style.display =  "initial"; // when not set to initial case 1 hides every other case's twitter
