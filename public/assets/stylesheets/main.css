@@ -167,6 +167,7 @@ body {
 }
 
 .ep-boxes {
+	cursor: pointer;
 	display: inline-flex;
 	flex-basis: 40%;
 	flex-grow: 0;
