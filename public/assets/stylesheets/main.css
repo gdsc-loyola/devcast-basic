@@ -780,6 +780,13 @@ body {
     }
 }
 
+@media screen and (max-width: 500px){
+	.footer p{
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 425px){
     .footer{
         width: 90%;
