@@ -167,6 +167,7 @@ body {
 }
 
 .ep-boxes {
+	position: relative;
 	cursor: pointer;
 	display: inline-flex;
 	flex-basis: 40%;
@@ -255,7 +256,7 @@ body {
 	.ep-text span {
 		position: absolute;
 		left: 0;
-		margin-left: 45px;
+		margin-left: 10px;
 		width: 230px;
 	}
 	
@@ -299,7 +300,7 @@ body {
 		position: absolute;
 		left: 0;
 		margin-top: 5px;
-		margin-left: 52px;
+		margin-left: 10px;
 		width: 280px;
 		font-size: 13px;
 	}
@@ -344,7 +345,7 @@ body {
 		position: absolute;
 		left: 0;
 		margin-top: 13px;
-		margin-left: 67px;
+		margin-left: 10px;
 		width: 280px;
 		font-size: 14px;
 	}
@@ -390,7 +391,7 @@ body {
 		position: absolute;
 		left: 0;
 		margin-top: 13px;
-		margin-left: 60px;
+		margin-left: 10px;
 		width: 380px;
 		font-size: 14px;
 	}
@@ -436,7 +437,7 @@ body {
 		position: absolute;
 		left: 0;
 		margin-top: 13px;
-		margin-left: 80px;
+		margin-left: 10px;
 		width: 380px;
 		font-size: 14px;
 	}
@@ -482,7 +483,7 @@ body {
 		position: absolute;
 		left: 0;
 		margin-top: 13px;
-		margin-left: 100px;
+		margin-left: 10px;
 		width: 380px;
 		font-size: 14px;
 	}
@@ -528,7 +529,7 @@ body {
 		position: absolute;
 		left: 0;
 		margin-top: 13px;
-		margin-left: 120px;
+		margin-left: 10px;
 		width: 380px;
 		font-size: 14px;
 	}
@@ -574,7 +575,7 @@ body {
 		position: absolute;
 		left: 0;
 		margin-top: 13px;
-		margin-left: 135px;
+		margin-left: 10px;
 		width: 380px;
 		font-size: 14px;
 	}
