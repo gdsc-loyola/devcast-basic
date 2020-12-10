@@ -699,6 +699,19 @@ body {
 	}
 }
 
+@media (min-width: 1700px) {
+	.episode-cont {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1850px) {
+	.episode-cont {
+		width: 85%;
+		margin: 0 auto;
+	}
+}
 /******************************************** FOOTER ***********************************************/
 
 .about, .footer{
@@ -720,16 +733,10 @@ body {
     font-size: 20px;
 }
 
-.social-media-icons:first-child{
-    padding-left: 0;
-}
-
-.social-media-icons{
-    padding: 10px;
-}
-
-.social-media-icons:hover {
-	filter: invert(50%);
+.about a{
+    text-decoration: none;
+	margin-right: 5px;
+	cursor: pointer;
 }
 
 .email{
@@ -767,7 +774,7 @@ body {
 
 @media screen and (max-width: 660px){
     .about{
-        padding: 64px 40px;
+        padding: 20px 40px;
     }
 }
 
@@ -851,6 +858,10 @@ body {
 	margin-bottom: 0px;
 }
 
+.modal-close:hover {
+	filter: invert(50%);
+}
+
 .modal-close #close1,#close2 {
 	z-index: 9999999;
 	background: #ffffff;
@@ -887,8 +898,9 @@ body {
 .modal-text p {
 	margin-top: 3px;
 	color: #8c8c8c;
-	font-size: 12px;
-	margin-bottom: 15px;
+	font-size: 15px;
+	line-height: 18px;
+	margin-bottom: 25px;
 }
 
 .modal-player {
@@ -941,6 +953,7 @@ body {
 	background: #252525;
 	border-radius: 50%;
 	transform: translate(10px, -130px);
+	cursor: pointer;
 }
 
 .player-btn #player-btnsymb {
@@ -952,6 +965,7 @@ body {
 	background: #f0f0f0;
 	border-radius: 5px;
 	transform: translate(28px, -168px);
+	cursor: pointer;
 }
 
 #paused {
@@ -959,6 +973,7 @@ body {
 	position: absolute;
 	top: 13.5px;
 	left: 16px;
+	cursor: pointer;
 }
 
 .pause-line {
@@ -967,6 +982,7 @@ body {
 	height: 22px;
 	background-color: #f0f0f0;
 	border-radius: 2px;
+	cursor: pointer;
 }
 
 .modal-speaker {
@@ -1002,7 +1018,7 @@ body {
 	margin-top: 10px;
 }
 
-.speaker-shareicons img {
+.speaker-shareicons svg {
 	display: inline-block;
 	width: 26px;
 	height: 26px;
@@ -1012,6 +1028,4 @@ body {
 	text-decoration: none;
 }
 
-#modfb:hover, #modtwt:hover, #modig:hover, #modlinkedin:hover {
-	filter: invert(50%);
-}
+

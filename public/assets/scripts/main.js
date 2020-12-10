@@ -105,3 +105,164 @@ function modal(check) {
 
 }
 
+function fbHover() {
+	let svg = document.querySelector('#fb svg')
+	let circle = document.querySelector('#fb circle')
+	let path = document.querySelector('#fb path')
+
+	svg.style.fill = "#4285F4";
+	circle.style.stroke = "#fff";
+	path.style.stroke = "#fff";
+}
+
+function fbLeave() {
+	let svg = document.querySelector('#fb svg')
+	let circle = document.querySelector('#fb circle')
+	let path = document.querySelector('#fb path')
+
+	svg.style.fill = "none";
+	circle.style.stroke = "#333333";
+	path.style.stroke = "#333333";
+}
+
+
+function twHover() {
+	let svg = document.querySelector('#tw svg')
+	let circle = document.querySelector('#tw circle')
+	let path = document.querySelector('#tw path')
+
+	svg.style.fill = "#4285F4";
+	circle.style.stroke = "#fff";
+	path.style.stroke = "#fff";
+}
+
+function twLeave() {
+	let svg = document.querySelector('#tw svg')
+	let circle = document.querySelector('#tw circle')
+	let path = document.querySelector('#tw path')
+
+	svg.style.fill = "none";
+	circle.style.stroke = "#333333";
+	path.style.stroke = "#333333";
+}
+
+function igHover() {
+	let svg = document.querySelector('#ig svg')
+	let circle = document.querySelector('#ig circle')
+	let paths = document.querySelectorAll('#ig path')
+
+	svg.style.fill = "#4285F4";
+	circle.style.stroke = "#fff";
+	paths.forEach((path) => {path.style.stroke = "#fff";})
+}
+
+function igLeave() {
+	let svg = document.querySelector('#ig svg')
+	let circle = document.querySelector('#ig circle')
+	let paths = document.querySelectorAll('#ig path')
+
+	svg.style.fill = "none";
+	circle.style.stroke = "#333333";
+	paths.forEach((path) => {path.style.stroke = "#333333";})
+}
+
+function liHover() {
+	let svg = document.querySelector('#li svg')
+	let circle = document.querySelector('#li circle')
+	let paths = document.querySelectorAll('#li path')
+
+	svg.style.fill = "#4285F4";
+	circle.style.stroke = "#fff";
+	paths.forEach((path) => {path.style.stroke = "#fff";})
+}
+
+function liLeave() {
+	let svg = document.querySelector('#li svg')
+	let circle = document.querySelector('#li circle')
+	let paths = document.querySelectorAll('#li path')
+
+	svg.style.fill = "none";
+	circle.style.stroke = "#333333";
+	paths.forEach((path) => {path.style.stroke = "#333333";})
+}
+
+function modfbHover() {
+	let svg = document.querySelector('#modfb svg')
+	let circle = document.querySelector('#modfb circle')
+	let path = document.querySelector('#modfb path')
+
+	svg.style.fill = "#4285F4";
+	circle.style.stroke = "#fff";
+	path.style.stroke = "#fff";
+}
+
+function modfbLeave() {
+	let svg = document.querySelector('#modfb svg')
+	let circle = document.querySelector('#modfb circle')
+	let path = document.querySelector('#modfb path')
+
+	svg.style.fill = "none";
+	circle.style.stroke = "#333333";
+	path.style.stroke = "#333333";
+}
+
+
+function modtwHover() {
+	let svg = document.querySelector('#modtwt svg')
+	let circle = document.querySelector('#modtwt circle')
+	let path = document.querySelector('#modtwt path')
+
+	svg.style.fill = "#4285F4";
+	circle.style.stroke = "#fff";
+	path.style.stroke = "#fff";
+}
+
+function modtwLeave() {
+	let svg = document.querySelector('#modtwt svg')
+	let circle = document.querySelector('#modtwt circle')
+	let path = document.querySelector('#modtwt path')
+
+	svg.style.fill = "none";
+	circle.style.stroke = "#333333";
+	path.style.stroke = "#333333";
+}
+
+function modigHover() {
+	let svg = document.querySelector('#modig svg')
+	let circle = document.querySelector('#modig circle')
+	let paths = document.querySelectorAll('#modig path')
+
+	svg.style.fill = "#4285F4";
+	circle.style.stroke = "#fff";
+	paths.forEach((path) => {path.style.stroke = "#fff";})
+}
+
+function modigLeave() {
+	let svg = document.querySelector('#modig svg')
+	let circle = document.querySelector('#modig circle')
+	let paths = document.querySelectorAll('#modig path')
+
+	svg.style.fill = "none";
+	circle.style.stroke = "#333333";
+	paths.forEach((path) => {path.style.stroke = "#333333";})
+}
+
+function modliHover() {
+	let svg = document.querySelector('#modlinkedin svg')
+	let circle = document.querySelector('#modlinkedin circle')
+	let paths = document.querySelectorAll('#modlinkedin path')
+
+	svg.style.fill = "#4285F4";
+	circle.style.stroke = "#fff";
+	paths.forEach((path) => {path.style.stroke = "#fff";})
+}
+
+function modliLeave() {
+	let svg = document.querySelector('#modlinkedin svg')
+	let circle = document.querySelector('#modlinkedin circle')
+	let paths = document.querySelectorAll('#modlinkedin path')
+
+	svg.style.fill = "none";
+	circle.style.stroke = "#333333";
+	paths.forEach((path) => {path.style.stroke = "#333333";})
+}
