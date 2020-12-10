@@ -859,7 +859,7 @@ body {
 }
 
 .modal-close:hover {
-	filter: invert(50%);
+	filter: invert(45%) sepia(46%) saturate(1044%) hue-rotate(183deg) brightness(100%) contrast(92%);
 }
 
 .modal-close #close1,#close2 {
