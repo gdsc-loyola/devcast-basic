@@ -600,7 +600,7 @@ body {
 }
 
 /* 651-1024px (768px) */
-@media (min-width: 651px) and (max-width: 1023px) {
+@media (min-width: 651px) and (max-width: 900px) {
 	
 	.episode-cont {
 		display: grid;
@@ -611,11 +611,22 @@ body {
 	}
 	
 	.ep-boxes {
+		flex: 0;
 		width: 100%;
 	}
+	
+	.ep-text h4 {
+		font-size: 14px;
+	}
+	
+	.ep-boxes a {
+		width: 150px!important;
+		margin-right: 0px!important;
+	}
+	
 }
 
-@media (min-width: 1023px) and (max-width: 1377px) {
+@media (min-width: 900px) and (max-width: 1199px) {
 	.episode-cont {
 		width: 100%;
 		margin: 0 auto;
@@ -629,8 +640,81 @@ body {
 		width: 47%;
 	}
 	
+	.ep-text h4 {
+		font-size: 12px;
+		line-height: 14px;
+	}
+	
+	.ep-text span {
+		font-size: 11px;
+	}
+	
 	.ep-boxes a {
-		width: 100px;
+		width: 250px!important;
+		font-size: 11.5px;
+	}
+	
+}
+
+@media (min-width: 1199px) and (max-width: 1364px) {
+	.episode-cont {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.ep-wrapper {
+		width: 100%;
+	}
+	
+	.ep-boxes {
+		width: 47%;
+	}
+	
+	.ep-text h4 {
+		font-size: 14px;
+		line-height: 15px;
+	}
+	
+	.ep-text span {
+		font-size: 12px;
+	}
+	
+	.ep-boxes a {
+		width: 250px!important;
+		font-size: 13px;
+	}
+	
+}
+
+@media (min-width: 1364px) and (max-width: 1431px) {
+	.episode-cont {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.ep-wrapper {
+		width: 100%;
+	}
+	
+	.ep-boxes {
+		width: 45%;
+	}
+	
+	.ep-text {
+		width: 240px;
+	}
+	
+	.ep-text h4 {
+		font-size: 15px;
+	}
+	
+	.ep-text span {
+		font-size: 14px;
+	}
+	
+	.ep-boxes a {
+		width: 80px!important;
+		font-size: 14px;
 	}
 	
 }
