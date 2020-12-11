@@ -3,7 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>DevCast</title>
+	<link rel="icon" href="assets/images/DevCastLogo.png" >
+	<meta property="og:title" content="DevCast: The Lead's Story" />
+	<meta developer="Julia Avila" site="https://github.com/julia-avila">
+	<meta developer="Tanzell Go" site="https://github.com/tanzellgo">
+	<meta developer="Titia de Castro" site="https://github.com/titiadecastro">
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://devcast.dscadmu.org/" />
+	<meta property="og:image" content="https://devcast.dscadmu.org/assets/images/DevCastLogo.png" />
+	<meta property="og:image:secure_url" content="https://devcast.dscadmu.org/assets/images/DevCastLogo.png" />
+	<meta property="og:site_name" content="DevCast: The Lead's Story" />
+	<meta property="og:description"
+		content="DevCast is the official podcast of Developer Student Clubs Loyola that features the stories of student leaders and professionals in the Google community. It discusses their successes, challenges, and valuable insights in their journey towards pursuing their passions in the field of technology." />
+	<meta name="description"
+		content="DevCast is the official podcast of Developer Student Clubs Loyola that features the stories of student leaders and professionals in the Google community. It discusses their successes, challenges, and valuable insights in their journey towards pursuing their passions in the field of technology." />
+
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
@@ -11,16 +26,208 @@
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
-    
-    
+	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-storage.js"></script>  
 
+	<link rel="stylesheet" href="./assets/stylesheets/main.css">
+    
   </head>
   <body>
 
+		<!-- audio files -->
+		<audio src="" id="episode1" ontimeupdate="displayDuration()"></audio>
+		<audio src="" id="episode2" ontimeupdate="displayDuration()"></audio>
+		<audio src="" id="episode3" ontimeupdate="displayDuration()"></audio>
+		<audio src="" id="episode4" ontimeupdate="displayDuration()"></audio>
+  
+  <!-- navbar -->
+  <nav class="navBar">
+    <img src="./assets/images/[DSC-L] Colored Horizontal (2) 1.png" alt="DSC Logo" class="dscLogo">
+    <img src="./assets/images/DSC_cropped.png" alt="DSC Cropped Logo" class="dscCropped">
+    <a href="https://dscadmu.org" target="_blank" rel="noopener noreferrer"><button class="visitUs">Visit Us</button></a>
+  </nav>
 
+  <!-- hero -->
+  <div class="heroContainer">
+    <div class="hero">
+      <img src="./assets/images/DevCastLogo.png" alt="" class="devcastLogo">
 
+      <h1 class="devcastHeader">DevCast: The Lead's Story</h1>
+      <p class="heroDescription">DevCast is the official podcast of Developer Student Clubs Loyola that features the stories of student leaders and professionals in the Google community. It discusses their successes, challenges, and valuable insights in their journey towards pursuing their passions in the field of technology.</p>
 
+      <a href="https://open.spotify.com/show/5z0WDdL8vUSQqa0f93t390" target="_blank" rel="noopener noreferrer"><img src="./assets/images/Spotify.png" alt="Spotify Podcasts" class="podcastIcons"></a>
+      <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8zYmM1YTMyNC9wb2RjYXN0L3Jzcw==" target="_blank" rel="noopener noreferrer"><img src="./assets/images/GooglePodcast.png" alt="Google Podcasts" class="podcastIcons"></a>
+      <a href="https://podcasts.apple.com/ph/podcast/devcast/id1536276001" target="_blank" rel="noopener noreferrer"><img src="./assets/images/ApplePodcast.png" alt="Apple Podcasts" class="podcastIcons"></a>
+    </div>
+
+    <div class="heroImg">
+      <img src="./assets/images/A guy working on his laptop 1.png" alt="A guy working on his laptop">
+    </div>
+  </div>
+	<!-------------EPISODE ------------------------------->
+	<div class="midsection-episode">
+		<div class="episode-cont">
+			<h3>Season One</h3>
+			<div class="ep-wrapper">
+				<div class="ep-boxes" onclick="modal(1)">
+					<img id="box1img" src="./assets/images/DEVCAST_Ep_Launch.jpg" alt="cover">
+					<div class="ep-text">
+						<h4 id="box1h">Episode 1: Seizing the Opportunity to Lead in DSC</h4>
+						<span id="box1t">What does it take to establish and lead a DSC chapter? In this episode, we catch up with Bruce Alturas, the founder, former DSC Lead, and current Design Lead of Developer Student Clubs - University of San Carlos, and talk about his humble beginnings in discovering his passion for Design and Information Technology. He shares his journey in founding a DSC Chapter at his university, his strategies to become an effective leader, and how joining DSC made him more passionate in his career path. He imparts insightful tips as well to students who aim to develop their technical skills.</span>
+						<a href="#!" id="box1">Read more ></a>
+					</div>
+				</div>
+				<div class="ep-boxes" onclick="modal(2)">
+					<img id="box2img" src="./assets/images/[DEVCAST] Ep 2 Launch.png">
+					<div class="ep-text">
+						<h4 id="box2h">Episode 2: Overcoming Challenges in Transitioning to a Tech Degree from a Non-Programming Background</h4>
+						<span id="box2t">How does one stay motivated to go deeper in learning programming despite being new to it? In this episode, we catch up with Anike Dorgu, current DSC Lead of Central Philippine University Iloilo, and talk about her life as a Software Engineering student and how the challenges it brings convinced her to shift to it midway through her freshman year. She shares the ups and downs of being a tech student and how being optimistic can change one's mindset when developing one's technical skills. She imparts her insights on how to conquer the feeling of imposter syndrome and achieving progress by getting started in personal projects.</span>
+						<a href="#!">Read more ></a>
+					</div>
+				</div>
+				<div class="ep-boxes" onclick="modal(3)">
+					<img id="box3img" src="./assets/images/[DEVCAST] Episode 3 Launch.png">
+					<div class="ep-text">
+						<h4 id="box3h">Episode 3: How to Maximize your Potential When Learning New Technologies</h4>
+						<span id="box3t">How can you efficiently utilize the vast learning resources on the Internet? Joshua joins us on DevCast to talk about why it is important to get started in coding projects to build a substantial project portfolio when applying for jobs or internships. He shares tips on how to learn new technologies while working without getting burnt out, and how to get ideas when one does not know exactly where to start in building a portfolio. He also talks about his role as a Google Developer Expert, how he became one at such a young age, and how this role has made an impact in his career and personal life.</span>
+						<a href="#!">Read more ></a>
+					</div>
+				</div>
+				<div class="ep-boxes" onclick="modal(4)">
+					<img id="box4img" src="./assets/images/[DEVCAST] Episode 4 Launch.png">
+					<div class="ep-text">
+						<h4 id="box4h">Episode 4: What It's Like to Manage an Artificial Intelligence Startup in the Philippines</h4>
+						<span id="box4t">What does it take to build a startup from the ground up? Francis joins us on DevCast to talk about the humble beginnings of Indigo Research and how it has scaled into the startup company it is today. He shares the reality of the startup environment in the country and how Indigo Research managed to establish its niche in the market. He also shares how he manages risks and decision-making as the CEO in order to lead his startup to success.</span>
+						<a href="#!">Read more ></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- footer -->
+    <div class="about">
+      <h1>Questions?</h1>
+      <p>Contact us through our social media accounts</p>
+	  <a id="fb" onmouseover="fbHover()" onmouseleave="fbLeave()" href="https://www.facebook.com/dscloyola" target="_blank" rel="noopener noreferrer">
+	  	<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="24" cy="24" r="23" stroke="#333333" stroke-width="2"/>
+			<path d="M29.5 13.1665H26.25C24.8134 13.1665 23.4357 13.7372 22.4198 14.753C21.404 15.7688 20.8333 17.1466 20.8333 18.5832V21.8332H17.5833V26.1665H20.8333V34.8332H25.1667V26.1665H28.4167L29.5 21.8332H25.1667V18.5832C25.1667 18.2959 25.2808 18.0203 25.484 17.8171C25.6871 17.614 25.9627 17.4998 26.25 17.4998H29.5V13.1665Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+	  </a>
+      <a id="tw" onmouseover="twHover()" onmouseleave="twLeave()" href="https://twitter.com/dscloyola" target="_blank" rel="noopener noreferrer">
+	  	<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="24" cy="24" r="23" stroke="#333333" stroke-width="2"/>
+			<path d="M35 14.9998C34.0424 15.6753 32.9821 16.1919 31.86 16.5298C31.2577 15.8373 30.4573 15.3465 29.567 15.1237C28.6767 14.901 27.7395 14.957 26.8821 15.2843C26.0247 15.6115 25.2884 16.1942 24.773 16.9535C24.2575 17.7128 23.9877 18.6121 24 19.5298V20.5298C22.2426 20.5754 20.5013 20.1856 18.931 19.3952C17.3607 18.6049 16.0103 17.4384 15 15.9998C15 15.9998 11 24.9998 20 28.9998C17.9405 30.3978 15.4872 31.0987 13 30.9998C22 35.9998 33 30.9998 33 19.4998C32.9991 19.2213 32.9723 18.9434 32.92 18.6698C33.9406 17.6633 34.6608 16.3925 35 14.9998V14.9998Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+	  </a>
+      <a id="ig" onmouseover="igHover()" onmouseleave="igLeave()" href="https://www.instagram.com/dsc.loyola/" target="_blank" rel="noopener noreferrer">
+	  	<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="24" cy="24" r="23" stroke="#333333" stroke-width="2"/>
+			<path d="M29 14H19C16.2386 14 14 16.2386 14 19V29C14 31.7614 16.2386 34 19 34H29C31.7614 34 34 31.7614 34 29V19C34 16.2386 31.7614 14 29 14Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M28 23.3698C28.1234 24.2021 27.9813 25.052 27.5938 25.7988C27.2063 26.5456 26.5931 27.1512 25.8416 27.5295C25.0901 27.9077 24.2384 28.0394 23.4078 27.9057C22.5771 27.7721 21.8098 27.3799 21.2148 26.785C20.6199 26.1901 20.2277 25.4227 20.0941 24.592C19.9604 23.7614 20.0921 22.9097 20.4703 22.1582C20.8486 21.4067 21.4542 20.7936 22.201 20.4061C22.9478 20.0186 23.7978 19.8764 24.63 19.9998C25.4789 20.1257 26.2649 20.5213 26.8717 21.1281C27.4785 21.735 27.8741 22.5209 28 23.3698Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M29.5 18.5H29.51" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+	  </a>
+      <a id="li" onmouseover="liHover()" onmouseleave="liLeave()" href="https://www.linkedin.com/company/dsc-ateneo/" target="_blank" rel="noopener noreferrer">
+		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="24" cy="24" r="23" stroke="#333333" stroke-width="2"/>
+			<path d="M29 19C30.5913 19 32.1174 19.6321 33.2426 20.7574C34.3679 21.8826 35 23.4087 35 25V32H31V25C31 24.4696 30.7893 23.9609 30.4142 23.5858C30.0391 23.2107 29.5304 23 29 23C28.4696 23 27.9609 23.2107 27.5858 23.5858C27.2107 23.9609 27 24.4696 27 25V32H23V25C23 23.4087 23.6321 21.8826 24.7574 20.7574C25.8826 19.6321 27.4087 19 29 19V19Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M19 20H15V32H19V20Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M17 17C18.1046 17 19 16.1046 19 15C19 13.8954 18.1046 13 17 13C15.8954 13 15 13.8954 15 15C15 16.1046 15.8954 17 17 17Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+	  </a>
+      <p>Or email us at <a href="mailto: dsc.loyola@gmail.com" rel="noopener noreferrer" class="email">dsc.loyola@gmail.com</a>.</p>
+    </div>
+
+    <footer class="footer">
+      <img src="./assets/images/[DSC-L] Colored Horizontal (2) 1.png" alt="DSC Logo" class="DSC-logo">
+      <p>&copy; 2020 Developer Student Clubs Loyola. All Rights Reserved.</p>
+    </footer>
+	
+	<!----MODAL----->
+	<div class="modal-cover" onclick="modal(0); stopEpisode()"></div>
+	<div class="modal-cont">
+		<div class="modal-hold">
+			<div class="modal-coverimg">
+				<img id="modalimg" src="">
+				<div class="modal-close">
+					<!--modal close-->
+					<a href="#!" onclick="modal(0); stopEpisode()">
+						<div id="close1"></div>
+						<div id="close2"></div>
+					</a>
+				</div>
+				<div class="modal-imgshare">
+					<!--blue share click-->
+					<a id="blueshare" href="" target="__blank">
+						<img src="./assets/images/ShareButton.png">
+					</a>
+				</div>
+			</div>
+			<div class="modal-notimgcont">
+				<div class="modal-text">
+					<h4 id="modalh"></h4>
+					<p id="modalt"></p>
+				</div>
+				<div class="modal-player">
+					<div class="player-text">
+						<span id="modalplayernum"></span>
+						<span id="duration">00:00 / 00:00</span>
+						<p id="modalplayerhead"></p>
+						<span id="modalplayerauth"></span>
+					</div>
+					<div class="player-img">
+						<div id="player-bg"></div>
+						<div class="player-btn" onclick="playEpisode()">
+							<div id="player-btncircle">
+								<div id="paused">
+									<div class="pause-line"></div>
+									<div class="pause-line"></div>
+								</div>
+							</div>
+							<div id="player-btnsymb"></div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-speaker">
+					<h5>Speaker</h5>
+					<img id="speaker-img" src="">
+					<p id="modalspeaker"></p>
+					<div class="speaker-shareicons">
+						<a id="modfb" onmouseover="modfbHover()" onmouseleave="modfbLeave()" href="" target="_blank" rel="noopener noreferrer">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="24" cy="24" r="23" stroke="#333333" stroke-width="2"/>
+								<path d="M29.5 13.1665H26.25C24.8134 13.1665 23.4357 13.7372 22.4198 14.753C21.404 15.7688 20.8333 17.1466 20.8333 18.5832V21.8332H17.5833V26.1665H20.8333V34.8332H25.1667V26.1665H28.4167L29.5 21.8332H25.1667V18.5832C25.1667 18.2959 25.2808 18.0203 25.484 17.8171C25.6871 17.614 25.9627 17.4998 26.25 17.4998H29.5V13.1665Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+						<a id="modtwt" onmouseover="modtwHover()" onmouseleave="modtwLeave()" href="" target="_blank" rel="noopener noreferrer">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="24" cy="24" r="23" stroke="#333333" stroke-width="2"/>
+								<path d="M35 14.9998C34.0424 15.6753 32.9821 16.1919 31.86 16.5298C31.2577 15.8373 30.4573 15.3465 29.567 15.1237C28.6767 14.901 27.7395 14.957 26.8821 15.2843C26.0247 15.6115 25.2884 16.1942 24.773 16.9535C24.2575 17.7128 23.9877 18.6121 24 19.5298V20.5298C22.2426 20.5754 20.5013 20.1856 18.931 19.3952C17.3607 18.6049 16.0103 17.4384 15 15.9998C15 15.9998 11 24.9998 20 28.9998C17.9405 30.3978 15.4872 31.0987 13 30.9998C22 35.9998 33 30.9998 33 19.4998C32.9991 19.2213 32.9723 18.9434 32.92 18.6698C33.9406 17.6633 34.6608 16.3925 35 14.9998V14.9998Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+						<a id="modig" onmouseover="modigHover()" onmouseleave="modigLeave()" href="" target="_blank" rel="noopener noreferrer">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="24" cy="24" r="23" stroke="#333333" stroke-width="2"/>
+								<path d="M29 14H19C16.2386 14 14 16.2386 14 19V29C14 31.7614 16.2386 34 19 34H29C31.7614 34 34 31.7614 34 29V19C34 16.2386 31.7614 14 29 14Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M28 23.3698C28.1234 24.2021 27.9813 25.052 27.5938 25.7988C27.2063 26.5456 26.5931 27.1512 25.8416 27.5295C25.0901 27.9077 24.2384 28.0394 23.4078 27.9057C22.5771 27.7721 21.8098 27.3799 21.2148 26.785C20.6199 26.1901 20.2277 25.4227 20.0941 24.592C19.9604 23.7614 20.0921 22.9097 20.4703 22.1582C20.8486 21.4067 21.4542 20.7936 22.201 20.4061C22.9478 20.0186 23.7978 19.8764 24.63 19.9998C25.4789 20.1257 26.2649 20.5213 26.8717 21.1281C27.4785 21.735 27.8741 22.5209 28 23.3698Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M29.5 18.5H29.51" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+						<a id="modlinkedin" onmouseover="modliHover()" onmouseleave="modliLeave()" href="" target="_blank" rel="noopener noreferrer">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="24" cy="24" r="23" stroke="#333333" stroke-width="2"/>
+								<path d="M29 19C30.5913 19 32.1174 19.6321 33.2426 20.7574C34.3679 21.8826 35 23.4087 35 25V32H31V25C31 24.4696 30.7893 23.9609 30.4142 23.5858C30.0391 23.2107 29.5304 23 29 23C28.4696 23 27.9609 23.2107 27.5858 23.5858C27.2107 23.9609 27 24.4696 27 25V32H23V25C23 23.4087 23.6321 21.8826 24.7574 20.7574C25.8826 19.6321 27.4087 19 29 19V19Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M19 20H15V32H19V20Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M17 17C18.1046 17 19 16.1046 19 15C19 13.8954 18.1046 13 17 13C15.8954 13 15 13.8954 15 15C15 16.1046 15.8954 17 17 17Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
 
     <script>
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -36,7 +243,10 @@
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
+	  firebase.analytics();
+	</script>
+
+	<script src="./assets/scripts/main.js"></script>
+	<script src="./assets/scripts/audio.js"></script>
   </body>
 </html>
