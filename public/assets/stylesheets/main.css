@@ -694,7 +694,7 @@ body {
 	}
 	
 	.ep-text {
-		width: 240px;
+		width: calc(100% - 150px);
 	}
 	
 	.ep-text h4 {
