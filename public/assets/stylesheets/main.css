@@ -185,10 +185,12 @@ body {
 	display: inline-flex;
 	flex-grow: 0;
 	height: auto;
+	padding: 5px;
 	margin: 10px;
 	background: #fff;
 	border-radius: 5px;
 	box-shadow: 0px 4px 2px -2px #e0e0e0;
+	box-sizing: border-box;
 }
 
 .ep-boxes img {
@@ -199,9 +201,12 @@ body {
 }
 
 .ep-text {
+	width: calc(100% - 150px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	margin-top: 0px;
 	margin-left: 5px;
-	max-width: 285px;
 }
 
 .ep-text h4 {
@@ -225,13 +230,11 @@ body {
 }
 
 .ep-boxes a {
-	margin-top: 120px;
-	margin-bottom: 10px;
-	margin-right: 8px;
-	margin-left: 5px;
+	align-self: flex-end;
 	color: #4285f4;
 	font-size: 13px;
 	text-decoration: none;
+	margin-top: 5px;
 }
 
 /* <=325px (320px) */
@@ -247,16 +250,19 @@ body {
 	}
 	
 	.ep-boxes {
-		width: 250px;
+		width: 260px;
 		min-height: 200px;
 	}
 	
 	.ep-boxes img {
 		max-width: 90px;
 		max-height: 90px;
-	
 	}
 	
+	.ep-text {
+		width: calc(100% - 130px)
+	}
+
 	.ep-text h4 {
 		font-size: 13px;
 		width: 138px;
@@ -267,14 +273,9 @@ body {
 	.ep-text span {
 		position: absolute;
 		left: 0;
+		margin-top: 110px;
 		margin-left: 10px;
 		width: 230px;
-	}
-	
-	.ep-boxes a {
-		position: absolute;
-		margin-top: 170px;
-		margin-left: 165px;
 	}
 }
 
@@ -299,6 +300,10 @@ body {
 		max-width: 100px;
 		max-height: 100px;
 	}
+
+	.ep-text {
+		width: calc(100% - 130px)
+	}
 	
 	.ep-text h4 {
 		font-size: 14px;
@@ -310,16 +315,10 @@ body {
 	.ep-text span {
 		position: absolute;
 		left: 0;
-		margin-top: 5px;
+		margin-top: 120px;
 		margin-left: 10px;
 		width: 280px;
 		font-size: 13px;
-	}
-	
-	.ep-boxes a {
-		position: absolute;
-		margin-top: 180px;
-		margin-left: 210px;
 	}
 }
 
@@ -344,6 +343,10 @@ body {
 		max-width: 108px;
 		max-height: 108px;
 	}
+
+	.ep-text {
+		width: calc(100% - 130px)
+	}
 	
 	.ep-text h4 {
 		font-size: 16px;
@@ -355,16 +358,9 @@ body {
 	.ep-text span {
 		position: absolute;
 		left: 0;
-		margin-top: 13px;
+		margin-top: 130px;
 		margin-left: 10px;
 		width: 280px;
-		font-size: 14px;
-	}
-	
-	.ep-boxes a {
-		position: absolute;
-		margin-top: 190px;
-		margin-left: 225px;
 		font-size: 14px;
 	}
 }
@@ -401,16 +397,9 @@ body {
 	.ep-text span {
 		position: absolute;
 		left: 0;
-		margin-top: 13px;
+		margin-top: 130px;
 		margin-left: 10px;
 		width: 380px;
-		font-size: 14px;
-	}
-	
-	.ep-boxes a {
-		position: absolute;
-		margin-top: 190px;
-		margin-left: 300px;
 		font-size: 14px;
 	}
 }
@@ -447,16 +436,9 @@ body {
 	.ep-text span {
 		position: absolute;
 		left: 0;
-		margin-top: 13px;
+		margin-top: 130px;
 		margin-left: 10px;
 		width: 380px;
-		font-size: 14px;
-	}
-	
-	.ep-boxes a {
-		position: absolute;
-		margin-top: 190px;
-		margin-left: 300px;
 		font-size: 14px;
 	}
 }
@@ -482,6 +464,10 @@ body {
 		max-width: 108px;
 		max-height: 108px;
 	}
+
+	.ep-text {
+		width: calc(100% - 130px)
+	}
 	
 	.ep-text h4 {
 		font-size: 16px;
@@ -493,16 +479,9 @@ body {
 	.ep-text span {
 		position: absolute;
 		left: 0;
-		margin-top: 13px;
+		margin-top: 130px;
 		margin-left: 10px;
 		width: 380px;
-		font-size: 14px;
-	}
-	
-	.ep-boxes a {
-		position: absolute;
-		margin-top: 190px;
-		margin-left: 300px;
 		font-size: 14px;
 	}
 }
@@ -539,16 +518,9 @@ body {
 	.ep-text span {
 		position: absolute;
 		left: 0;
-		margin-top: 13px;
+		margin-top: 130px;
 		margin-left: 10px;
 		width: 380px;
-		font-size: 14px;
-	}
-	
-	.ep-boxes a {
-		position: absolute;
-		margin-top: 190px;
-		margin-left: 300px;
 		font-size: 14px;
 	}
 }
@@ -585,16 +557,9 @@ body {
 	.ep-text span {
 		position: absolute;
 		left: 0;
-		margin-top: 13px;
+		margin-top: 130px;
 		margin-left: 10px;
 		width: 380px;
-		font-size: 14px;
-	}
-	
-	.ep-boxes a {
-		position: absolute;
-		margin-top: 190px;
-		margin-left: 300px;
 		font-size: 14px;
 	}
 }
@@ -626,14 +591,7 @@ body {
 	
 	#box2t {
 		font-size: 11.5px;
-	}
-	
-	.ep-boxes a {
-		font-size: 11.5px;
-		width: 150px!important;
-		margin-right: 0px!important;
-	}
-	
+	}	
 }
 
 @media (min-width: 968px) and (max-width: 1000px) {
@@ -667,12 +625,6 @@ body {
 	.ep-text span {
 		font-size: 10px;
 	}
-	
-	.ep-boxes a {
-		width: 250px!important;
-		font-size: 11px;
-	}
-	
 }
 
 @media (min-width: 1001px) and (max-width: 1154px) {
@@ -701,12 +653,6 @@ body {
 	.ep-text span {
 		font-size: 11px;
 	}
-	
-	.ep-boxes a {
-		width: 250px!important;
-		font-size: 11.8px;
-	}
-	
 }
 
 @media (min-width: 1154px) and (max-width: 1364px) {
@@ -730,13 +676,7 @@ body {
 	
 	.ep-text span {
 		font-size: 12px;
-	}
-	
-	.ep-boxes a {
-		width: 250px!important;
-		font-size: 13px;
-	}
-	
+	}	
 }
 
 @media (min-width: 1364px) and (max-width: 1431px) {
@@ -764,12 +704,6 @@ body {
 	.ep-text span {
 		font-size: 14px;
 	}
-	
-	.ep-boxes a {
-		width: 80px!important;
-		font-size: 14px;
-	}
-	
 }
 
 @media (min-width: 1700px) {
