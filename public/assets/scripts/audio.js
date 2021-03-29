@@ -1,23 +1,18 @@
-const episode1 = document.getElementById("episode1");
-const episode2 = document.getElementById("episode2");
-const episode3 = document.getElementById("episode3");
-const episode4 = document.getElementById("episode4");
-const episodeList = [episode1, episode2, episode3, episode4 ]
 const playBtn = document.getElementById('player-btnsymb');
 const pauseBtn = document.getElementById('paused');
 let durationText = document.getElementById('duration');
 
-episodeList.forEach(ep => {
-    const gsReference = firebase.storage().refFromURL('gs://devcast-website.appspot.com/');
-    let audioRef = gsReference.child(ep.id.slice(-1)+".mp3");
+// episodeList.forEach(ep => {
+//     const gsReference = firebase.storage().refFromURL('gs://devcast-website.appspot.com/');
+//     let audioRef = gsReference.child(ep.id.slice(-1)+".mp3");
 
-    audioRef.getDownloadURL().then(function(url) {
-        ep.src = url;
-    })
-})
+//     audioRef.getDownloadURL().then(function(url) {
+//         ep.src = url;
+//     })
+// })
 
 
-if (!episode1.paused || !episode2.paused || !episode3.paused || !episode4.paused) {
+if (!episode1.paused || !episode2.paused || !episode3.paused || !episode4.paused || !episode5.paused) {
     playBtn.style.display = 'none';
     pauseBtn.style.display = 'block';
 }
@@ -33,6 +28,9 @@ function playEpisode(){
     } 
     else if (document.getElementById('modalplayernum').innerHTML == 'S01E04') {
         episode4.play();
+    }
+    else if (document.getElementById('modalplayernum').innerHTML == 'S01E05') {
+        episode5.play();
     }
 
     if (playBtn.style.display != 'none') {
@@ -58,6 +56,9 @@ function pauseEpisode(){
     else if (!episode4.paused) {
         episode4.pause();
     }
+    else if (!episode5.paused) {
+        episode5.pause();
+    }
 }
 
 function stopEpisode(){
@@ -76,6 +77,10 @@ function stopEpisode(){
         episode4.pause();
         episode4.currentTime = 0;
     }
+    else if (episode5.currentTime > 0) {
+        episode5.pause();
+        episode5.currentTime = 0;
+    }
 
     playBtn.style.display = 'block';
     pauseBtn.style.display = 'none';
@@ -93,8 +98,14 @@ function secondsToTime(seconds) {
     if (sec < 10){ 
         sec  = "0" + sec;
     }
-
-    return min + ':' + sec;
+    if (hr < 10) {
+        hr = "0" + hr;
+    }
+    if (hr <= 0) {
+        return min + ':' + sec;
+    } else {
+        return hr + ':' + min + ':' + sec;
+    }
 }
 
 function displayDuration() {
@@ -108,5 +119,8 @@ function displayDuration() {
     }  
     else if (document.getElementById('modalplayernum').innerHTML == 'S01E04') {
         durationText.innerHTML = secondsToTime(episode4.currentTime) + " / " + secondsToTime(episode4.duration);
+    }
+    else if (document.getElementById('modalplayernum').innerHTML == 'S01E05') {
+        durationText.innerHTML = secondsToTime(episode5.currentTime) + " / " + secondsToTime(episode5.duration);
     }
 }
